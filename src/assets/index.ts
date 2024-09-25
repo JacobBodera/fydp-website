@@ -4,7 +4,7 @@ import josephProfile from "./josephProfile.png";
 import calebProfile from "./calebProfile.png";
 import emptyProfile from "./emptyProfile.png";
 import linkedin from "./linkedin.png";
-import overviewRobot from "./overviewRobot.png";
+import overviewPic from "./overviewPic.png";
 
 export {
   jacobProfile,
@@ -13,5 +13,5 @@ export {
   calebProfile,
   emptyProfile,
   linkedin,
-  overviewRobot,
+  overviewPic,
 };

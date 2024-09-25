@@ -23,14 +23,14 @@ export const Members = () => {
 
 const Member = ({ memberInfo }: { memberInfo: MemberInformation }) => {
   return (
-    <div className="w-full flex align-middle text-black justify-between rounded-xl border-black border-2 p-3">
+    <div className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-between rounded-xl border-black border-2 text-black p-3">
       <img
-        className="rounded-full w-full h-full max-w-48 max-h-48 mr-8"
+        className="rounded-full w-full h-full max-w-48 max-h-48 mr-8 flex sm:mb-0 mb-4"
         src={memberInfo.profile}
         alt="member picture"
       />
       <div className="flex flex-col">
-        <div className="flex justify-between mb-3">
+        <div className="flex sm:justify-between sm:items-end justify-between items-end mb-3">
           <div className="text-3xl underline">{memberInfo.name}</div>
           <a href={memberInfo.linkedinUrl}>
             <img

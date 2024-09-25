@@ -7,7 +7,7 @@ export const Overview = () => {
       <div className="w-full flex flex-col items-center gap-8 p-4 bg-transparent rounded-2xl border-black border-2 text-lg indent-8">
         <div className="flex">{overviewData.intro}</div>
         <img
-          className="w-full flex max-w-[512px]"
+          className="w-full flex max-w-[432px]"
           src={overviewData.image}
           alt="image of project"
         />

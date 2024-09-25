@@ -1,6 +1,6 @@
 import {
   jacobProfile,
-  overviewRobot,
+  overviewPic,
   wesProfile,
   josephProfile,
   calebProfile,
@@ -54,7 +54,7 @@ export const memberInfoList = [
 
 export const overviewData = {
   intro:
-    "This project centers around a robotic desk assistant designed to streamline productivity and improve work-life balance. It syncs with various apps like calendars and alarms, interacts via voice commands, and uses computer vision to detect mood and environment. The robot also lightens the mood with entertaining dialogue, encouraging users to take breaks when needed.",
-  image: overviewRobot,
-  body: "The robotic desk assistant is a multifunctional tool aimed at enhancing productivity, time management, and overall well-being. Equipped with voice command functionality, the robot seamlessly syncs with essential apps such as calendars, weather, alarms, and timers, allowing users to manage their schedules and tasks effortlessly. In addition to its practical applications, the system incorporates a computer vision feature that can recognize user expressions and environmental cues to gauge mood and behavior. Through a machine learning model, the assistant adapts to the user’s needs, providing both productivity reminders and engaging dialogue to foster a more balanced work environment. One of its key goals is to encourage healthier work habits by reminding users to take breaks and offering occasional quips to ease stress, thus improving both focus and relaxation.",
+    "This project focuses on developing a vision system designed to assist visually impaired individuals, the elderly, and those with memory challenges in locating household objects. The system utilizes computer vision to recognize items like keys, remotes, and phones when the user interacts with them. By tracking where these objects are placed, the system can provide users with helpful information regarding the last known location of their belongings through simple voice commands.",
+  image: overviewPic,
+  body: "The core functionality of this system relies on advanced object recognition and tracking technologies, integrated with a user-friendly voice interface. When a user picks up or moves an object such as a phone, wallet, or glasses, the system's camera identifies the item and updates its database with the new location. This continuous monitoring helps ensure that misplaced items can be easily found by querying the system, which will then inform the user of the object's most recent location. The system is designed to be intuitive, requiring minimal effort from the user, and aims to provide a seamless and efficient solution to common daily challenges faced by people with visual impairments, memory difficulties, or aging-related cognitive decline.",
 };

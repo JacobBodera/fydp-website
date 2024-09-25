@@ -9,6 +9,11 @@ module.exports = {
         light: "#6A9C89",
         dark: "#16423C",
       },
+      screens: {
+        sm: "576px",
+        md: "790px",
+        lg: "1440px",
+      },
     },
   },
   plugins: [],
