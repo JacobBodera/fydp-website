@@ -17,7 +17,19 @@ export const progressDataList = [
     title: "Problem Definition",
     date: "16-09-2024",
     content:
-      "The team researched some potential problem spaces and discussed the practicality of each. Each member provided their own interests regarding topics and techincal areas, and using these interests to narrow scope, some initial project ideas were discussed:\n\n- Mental Health Robot: a small desktop robot that could perform a variety of different functions such as schedule planning, analyze emotial state to provide assistance, and regulate balance between work and rest time.\n- Object Tracking Glasses: Glasses directed for the visually impaired, elderly, or people with memory impairment which automatically detects when an object is picked up and keeps track of where that object in placed. When looking for an item, the system can desribe the location of where that object was last seen.\n- Optimal Path AR Helmet: A helmet that contains a vision system and a heads-up-display that shows a commuter the optimal path through a group of people or obstacles. This is designed for people who use electronics bikes, scooters, skateboards, omniwheels to show them how to safely navigate their surrounding and show them important infromation while riding.",
+      "The team researched some potential problem spaces and discussed the practicality of each. Each member provided their own interests regarding topics and techincal areas, and using these interests to narrow scope, some initial project ideas were discussed:\n\n- Mental Health Robot: a small desktop robot that could perform a variety of different functions such as schedule planning, analyze emotial state to provide assistance, and regulate balance between work and rest time.\n\n- Object Tracking Glasses: Glasses directed for the visually impaired, elderly, or people with memory impairment which automatically detects when an object is picked up and keeps track of where that object in placed. When looking for an item, the system can desribe the location of where that object was last seen.\n\n- Optimal Path AR Helmet: A helmet that contains a vision system and a heads-up-display that shows a commuter the optimal path through a group of people or obstacles. This is designed for people who use electronics bikes, scooters, skateboards, omniwheels to show them how to safely navigate their surrounding and show them important infromation while riding.",
+  },
+  {
+    title: "Finalized Problem Space",
+    date: "23-09-2024",
+    content:
+      "Discussed project ideas further and presented them to the project professors to get some feedback and thoughts on the feasibility of each. From the feedback recieved, the team decided to move forward with the object tracking system for individuals with visual and memory impairments, and the project overview was updated with this change. We brainstormed many different ways that this project can be implemented as well as all the possible functions that it could have relating to the problem space, and categorized them into constrains and criteria.",
+  },
+  {
+    title: "Started Work on Preliminary Report",
+    date: "25-09-2024",
+    content:
+      "With the project idea now finalized, the team was able to start working on some of the deliverables for the preliminary design report. This included creating a list of constraints and criteria, designing possible solutions for the problem, and researching patents. All of these tasks were divided among the team, with Jacob updating the website data and making it mobile accessible, Wesley and Joseph researching similar patents, Caleb creating a list of constraints and criteria. As well, everyone brainstormed a few viable options for how our idea could be implemented and listing some of the pros and cons for each.",
   },
 ];
 
