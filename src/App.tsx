@@ -1,6 +1,7 @@
 import { Members } from "./components/Members";
 import { Navbar } from "./components/Navbar";
 import { Overview } from "./components/Overview";
+import { TechnicalDetails } from "./components/TechnicalDetails";
 import { Timeline } from "./components/Timeline";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Overview />
         <Members />
+        <TechnicalDetails />
         <Timeline />
       </div>
     </div>

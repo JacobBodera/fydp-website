@@ -33,6 +33,33 @@ export const progressDataList = [
   },
 ];
 
+export const technicalDetailDataList = [
+  {
+    title: "Constraints",
+    content:
+      "- Size Limitation: If system has a wearable component (i.e. glasses, wristband) it must not be any larger than 120% that of a consumer version of the product.\n\n- Object Detection: Must be able to detect at least five different types of common objects.\n\n- Range: Must be able to detect objects within a 3 meter distance of the consumer.\n\n- Cost: $300 per term as a group.\n\n- Data Storage: Must be able to store all of the location data of the available objects that the system is able to detect.",
+    link: null,
+  },
+  {
+    title: "Criteria",
+    content:
+      "Able to locate the last known position of an object down to a 1m range (smaller better)\n\n- Ease of use - minimal training time to use after setup\n\n- Communicate position of tracked object with user with clarity\n\n- Operate for an extended period of time (24 hours or longer)\n\n- Track up to 5 objects (i.e. key, water bottle)",
+    link: null,
+  },
+  {
+    title: "Poterntial Solutions",
+    content:
+      "- Bird’s eye view camera\n\n- Wearable attachment\n\n- Phone application\n\n- Glasses\n\n- Could help with warehouses",
+    link: null,
+  },
+  {
+    title: "Patents",
+    content:
+      "Patent 1:  This patent describes a system and method for continuously tracking the location of items using sensors in a smartphone. It involves controlling the background reading levels of these sensors to incrementally track the item’s location\nhttps://patents.google.com/patent/US20130166201A1/en\n\nPatent 2:  This patent involves an item locator system that includes a receiver module. The system can determine if an item has moved a predetermined distance from the receiver module, which can be useful for tracking stolen items.\nhttps://patents.google.com/patent/US20180137739A1/en\n\nPatent 3:  A computer-readable medium storing contents configured to cause a computing device to obtain image data describing a subject, measure the subject based on the obtained image data to obtain one or more spatial dimensions, and access data describing a wearable item based on the spatial dimensions of the subject.\nhttps://patents.google.com/patent/US20210386148A1/en",
+    link: null,
+  },
+];
+
 export const memberInfoList = [
   {
     name: "Jacob Bodera",
