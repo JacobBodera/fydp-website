@@ -31,19 +31,25 @@ export const progressDataList = [
     content:
       "With the project idea now finalized, the team was able to start working on some of the deliverables for the preliminary design report. This included creating a list of constraints and criteria, designing possible solutions for the problem, and researching patents. All of these tasks were divided among the team, with Jacob updating the website data and making it mobile accessible, Wesley and Joseph researching similar patents, Caleb creating a list of constraints and criteria. As well, everyone brainstormed a few viable options for how our idea could be implemented and listing some of the pros and cons for each.",
   },
+  {
+    title: "Created a Detailed Design Document",
+    date: "04-11-2024",
+    content:
+      "The team created a detailed design document to list all of the hardware, electrical, and software components that will be required for the project and started researching the best approaches for the project. The document includes the specific components and software that will be used for the project and includes reasoning as to why it was chosen. The summary of this research can be seen in the 'Detailed Design Overview' section above.",
+  },
 ];
 
 export const technicalDetailDataList = [
   {
     title: "Constraints",
     content:
-      "- Size Limitation: If system has a wearable component (i.e. glasses, wristband) it must not be any larger than 120% that of a consumer version of the product.\n\n- Object Detection: Must be able to detect at least five different types of common objects.\n\n- Range: Must be able to detect objects within a 3 meter distance of the consumer.\n\n- Cost: $300 per term as a group.\n\n- Data Storage: Must be able to store all of the location data of the available objects that the system is able to detect.",
+      "- Cost limit of $300 per term as a group\n- Must be able to track 3 distinct objects at a minimum\n- Able to describe location of tracked items to a 1m radius\n- Provide real-time data retrieval, maximum of 5 second processing\n- Must be operational for at least 12 hours of the day\n- Object location and image data must be secure\n- Data storage must be sufficiently large to store object locations",
     link: null,
   },
   {
     title: "Criteria",
     content:
-      "Able to locate the last known position of an object down to a 1m range (smaller better)\n\n- Ease of use - minimal training time to use after setup\n\n- Communicate position of tracked object with user with clarity\n\n- Operate for an extended period of time (24 hours or longer)\n\n- Track up to 5 objects (i.e. key, water bottle)",
+      "- Should have minimum cost\n- Should involve as minimal setup\n- Should have as much vision of the environment at any given time\n- Object location retrieval should be accessible to visually impaired\n- Should not create additional obstacles for the user such as being restrictive to wear",
     link: null,
   },
   {
@@ -55,7 +61,18 @@ export const technicalDetailDataList = [
   {
     title: "Patents",
     content:
-      "Patent 1:  This patent describes a system and method for continuously tracking the location of items using sensors in a smartphone. It involves controlling the background reading levels of these sensors to incrementally track the item’s location\nhttps://patents.google.com/patent/US20130166201A1/en\n\nPatent 2:  This patent involves an item locator system that includes a receiver module. The system can determine if an item has moved a predetermined distance from the receiver module, which can be useful for tracking stolen items.\nhttps://patents.google.com/patent/US20180137739A1/en\n\nPatent 3:  A computer-readable medium storing contents configured to cause a computing device to obtain image data describing a subject, measure the subject based on the obtained image data to obtain one or more spatial dimensions, and access data describing a wearable item based on the spatial dimensions of the subject.\nhttps://patents.google.com/patent/US20210386148A1/en",
+      "Patent 1: System and method for continuous and incremental location tracking of a smartphone based on situation-aware control of the level of background sensing\n- This invention uses the sensors of a smartphone to continuously and incrementally track its specific location\n- Uses different tracking modes (walking, stationary, and vehicle movement)\n- Adjusts sensor usage according to activity minimizing energy consumption\nhttps://patents.google.com/patent/US20130166201A1/en\n\nPatent 2: Item Locator\n- Patent introduces a system designed to locate lost or stolen items using a receiver module and tracking devices\n- Each tracked item has a mounted tracking chip\n- System allows users to select specific items through a handheld device/app\n- Can incorporate GPS to locate items over long distances\nhttps://patents.google.com/patent/US20180137739A1/en\n\nPatent 3: System and method for using a wearable location tracking and monitoring device\n- Patent outlines a system using wearable devices for tracking the location of objects or individuals\n- Wearable device communicates with a server through wireless networks, providing continuous monitoring and location data\n- System can also send alerts when an item moves beyond a specific range\nhttps://patents.google.com/patent/US20240242588A1/en?oq=20240242588",
+    link: null,
+  },
+  {
+    title: "Detailed Design Overview",
+    content:
+      "Microcontoller - Raspberry Pi 5 & AI HAT+\n   - very popular development platform and has a lot of open-source reference material\n   - can purchase at a reasonable price, especially when comparing to components used in industry\n   - the AI HAT resolves one of the greatest concerns in terms of computing power as it offloads all of this processing from the microcontroller\n   - the Raspberry Pi 5 includes all of the connections that we may need and WIFI/ethernet connection which is required for data transfer\n\n" +
+      "Camera - Raspberry Pi Camera Module 3\n   - guaranteed to integrated with microcontroller as it comes from the same manufacturer\n   - 12MP camera which provides high-quality image and video quality, which will make object detection much easier and more accurate\n   - documentation includes detailed technical specifications such as focal length and field of view, which are required for image calibration\n   - very low cost option compared to similar-quality alternatives\n\n" +
+      "Power Supply - Outlet Connection\n   - this is the most simple and reliable option to supply power and the system\n   - it provides an easy setup with no maintenence whatsoever, such as recharging or replacing a battery\n   - the camera system will be stationary and so direct outlet connection makes the most sense\n\n" +
+      "Frontend - Swift & XCode\n - the team has some experience creating IOS apps using these technologies\n -  the application can easily be created later for other platforms once design and functionality has been finalized\n\n" +
+      "Backend - Django\n   - a very versatile platform with simple API creation and usage\n   - since our API should be quite simple with only string data being transferred, a simple backend is much more desirable\n   - comes with useful built-in functions and security options\n   - the team is already experienced Python and setting up Django\n\n" +
+      "Object Detection/Machine Learning - Tensorflow & YOLO\n   - the team is already well-versed in Python and Tensorflow software development\n   - Python is being used in the backend developement already and it is important to keep software usage as consistent as possible within the project to avoid confusion and ensure that everyone is knowledgeable in the developement\n   - Tensorflow is one of the most popular machine learning frameworks for Python and has incredible documentation supporting it\n   - YOLO was chosen as the object detection model because it has the useful function of being able to complete object detection and bouding in one pass, which will be the input to the teams custom tracking model",
     link: null,
   },
 ];
@@ -65,7 +82,7 @@ export const memberInfoList = [
     name: "Jacob Bodera",
     profile: jacobProfile,
     description:
-      "Hello! My name is Jacob Bodera and I am in my final-year of Mechatronics Engineering Student. Throughout my undergraduate degree, I have been extremely interested in software development with a strong interest in fullstack development and machine learning. My previous experience includes web development & machine learning at Windscribe VPN, computer vision applications in soft robotics at the University of Guelph, and backend development and data analytics at Amazon Web Services. In my free time, I love going rockclimbing outdoors, playing games, and reading.",
+      "Hello! My name is Jacob Bodera and I am in my final-year of Mechatronics Engineering. Throughout my undergraduate degree, I have been extremely interested in software development with a strong interest in fullstack development and machine learning. My previous experience includes web development & machine learning at Windscribe VPN, computer vision applications in soft robotics at the University of Guelph, and backend development and data analytics at Amazon Web Services. In my free time, I love going rockclimbing outdoors, playing games, and reading.",
     linkedinUrl: "https://www.linkedin.com/in/jacob-bodera-869938226/",
   },
   {
