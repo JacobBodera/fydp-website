@@ -37,6 +37,18 @@ export const progressDataList = [
     content:
       "The team created a detailed design document to list all of the hardware, electrical, and software components that will be required for the project and started researching the best approaches for the project. The document includes the specific components and software that will be used for the project and includes reasoning as to why it was chosen. The summary of this research can be seen in the 'Detailed Design Overview' section above.",
   },
+  {
+    title: "Evaluating Project Components",
+    date: "04-18-2024",
+    content:
+      "The team starting work on evaluation the detailed design components chosen the previous week. This included testing out some of the technologies like the IOS app devopment, computer vision capabilities using YOLO, and some research regarding the electrical hardware and backend.\n\nAn IOS app was build which includes a home page which lists all of the objects that are being tracked which their respective locations, a profile page where the user can view and manage their data, and a settings page to view and change app configurations. As well, YOLO of installed and configured for out system, and some preliminary tests were executed. The model was trained on detecting and classifying a wallet and drawing a bouding box in real-time. This was good evidence that these technologies will work for the project and be capable to integrate with one another.\n\nFor the feasibility assessment of the Raspberry Pi 5 to run the machine learning model and tracking software, this was done by researching other projects that used this same hardware for projects with similar processing demands. Many projects were found where this controller provided more than enough processing factor, especially with the addition of the AI Hat+. Some links to these projects can be view below:\n\nhttps://medium.com/@muhammadsamiuddinrafayf18/raspberry-pi-5-a-game-changer-for-computer-vision-practitioners-986d830e9acb\nhttps://www.tomshardware.com/raspberry-pi/raspberry-pi-5-runs-advanced-open-source-ai-models\nhttps://www.youtube.com/watch?v=Vp4glSVPT8o\nhttps://www.picourse.dev/object-detection",
+  },
+  {
+    title: "Final Design Presentation",
+    date: "04-24-2024",
+    content:
+      "All of the work and data collected from the previous work sessions were compiled and the FDP was completed.",
+  },
 ];
 
 export const technicalDetailDataList = [
