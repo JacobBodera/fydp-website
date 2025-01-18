@@ -1,3 +1,4 @@
+import { BuildProgress } from "./components/BuildProgress";
 import { Members } from "./components/Members";
 import { Navbar } from "./components/Navbar";
 import { Overview } from "./components/Overview";
@@ -13,6 +14,7 @@ function App() {
         <Members />
         <TechnicalDetails />
         <Timeline />
+        <BuildProgress />
       </div>
     </div>
   );

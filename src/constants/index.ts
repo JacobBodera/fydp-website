@@ -39,15 +39,36 @@ export const progressDataList = [
   },
   {
     title: "Evaluating Project Components",
-    date: "04-18-2024",
+    date: "18-11-2024",
     content:
       "The team starting work on evaluation the detailed design components chosen the previous week. This included testing out some of the technologies like the IOS app devopment, computer vision capabilities using YOLO, and some research regarding the electrical hardware and backend.\n\nAn IOS app was build which includes a home page which lists all of the objects that are being tracked which their respective locations, a profile page where the user can view and manage their data, and a settings page to view and change app configurations. As well, YOLO of installed and configured for out system, and some preliminary tests were executed. The model was trained on detecting and classifying a wallet and drawing a bouding box in real-time. This was good evidence that these technologies will work for the project and be capable to integrate with one another.\n\nFor the feasibility assessment of the Raspberry Pi 5 to run the machine learning model and tracking software, this was done by researching other projects that used this same hardware for projects with similar processing demands. Many projects were found where this controller provided more than enough processing factor, especially with the addition of the AI Hat+. Some links to these projects can be view below:\n\nhttps://medium.com/@muhammadsamiuddinrafayf18/raspberry-pi-5-a-game-changer-for-computer-vision-practitioners-986d830e9acb\nhttps://www.tomshardware.com/raspberry-pi/raspberry-pi-5-runs-advanced-open-source-ai-models\nhttps://www.youtube.com/watch?v=Vp4glSVPT8o\nhttps://www.picourse.dev/object-detection",
   },
   {
     title: "Final Design Presentation",
-    date: "04-24-2024",
+    date: "24-11-2024",
     content:
       "All of the work and data collected from the previous work sessions were compiled and the FDP was completed.",
+  },
+  {
+    title: "Final Design Report",
+    date: "02-12-2024",
+    content:
+      "All the project management and technical aspects of the project were combined to create a final technical report. This report included constraints and criteria, related patents, possible design solutions, explaination of the final design chosen with all of the specific components and software chosen.",
+  },
+];
+
+export const buildProgressDataList = [
+  {
+    title: "Parts Ordered and Recieved",
+    date: "13-01-2025",
+    content:
+      "The team ordered the microcontroller, camera, and AI hat so that we can start testing the software-hardware integration and get more precise measurements to build the housing.",
+  },
+  {
+    title: "Task Delegation and Ramp-up",
+    date: "15-01-2025",
+    content:
+      "Project tasks were assigned to each memeber of the group with the plan being to work on component concurrently and connecting everything together afterwards. This approach allows easier components to be completed first so that more attention can be given so the more involved, like the ML model. The tasks assigned are the following:\n\nJacob: Keep FYDP website up to date, complete IOS application, design and print housing\nWesley: Create backend for data transfer and build housing\nJoseph & Caleb: Train ML model and create tracking algorithm",
   },
 ];
 
