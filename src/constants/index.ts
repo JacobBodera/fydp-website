@@ -70,6 +70,18 @@ export const buildProgressDataList = [
     content:
       "Project tasks were assigned to each memeber of the group with the plan being to work on component concurrently and connecting everything together afterwards. This approach allows easier components to be completed first so that more attention can be given so the more involved, like the ML model. The tasks assigned are the following:\n\nJacob: Keep FYDP website up to date, complete IOS application, design and print housing\nWesley: Create backend for data transfer and build housing\nJoseph & Caleb: Train ML model and create tracking algorithm",
   },
+  {
+    title: "Continuing to Build",
+    date: "01-02-2025",
+    content:
+      "The team has built out each of the different components of the project, including the hardware with the ML model, the backend, and the frontend. We have created data schemas in the backend and have run tests to ensure that data transfer betweent the frontend and backend works properly. On the hardware, the OS has been flashed to the board and some camera scripts were run to test the setup and analyze processing capabilities.",
+  },
+  {
+    title: "Adding Data",
+    date: "11-02-2025",
+    content:
+      "Jacob and Wes are working on image transfer between the backend and the frontend so that images of the tracked objects can be seen on the app. Caleb and Joseph are working on getting a test model running on the board.",
+  },
 ];
 
 export const technicalDetailDataList = [
