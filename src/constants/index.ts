@@ -59,16 +59,40 @@ export const progressDataList = [
 
 export const buildProgressDataList = [
   {
-    title: "Parts Ordered and Recieved",
-    date: "13-01-2025",
+    title: "Finishing up the system",
+    date: "11-03-2025",
     content:
-      "The team ordered the microcontroller, camera, and AI hat so that we can start testing the software-hardware integration and get more precise measurements to build the housing.",
+      "Backend was completed, with it being hosted completely through a Railway server and using AWS RDS to securely store data. Authorization was added to ensure that each profile can only access their own data, and enforcing refreshing authentication token for added safety.\n\nThe frontend IOS app was completed. The Home Page displayed object, allows the user to create new ones, and also gives the option of uploading images through the camera roll to be able to train the ML model. As well there is full login/logout integration and can be run on our personal devices.\n\nThe ML portion is complete, with objects being able to be tracked flawlessly. As well, it is able to send location and image data to the backend, which is then forwarded to the frontend.",
   },
   {
-    title: "Task Delegation and Ramp-up",
-    date: "15-01-2025",
+    title: "Making Demo Presentation",
+    date: "10-03-2025",
     content:
-      "Project tasks were assigned to each memeber of the group with the plan being to work on component concurrently and connecting everything together afterwards. This approach allows easier components to be completed first so that more attention can be given so the more involved, like the ML model. The tasks assigned are the following:\n\nJacob: Keep FYDP website up to date, complete IOS application, design and print housing\nWesley: Create backend for data transfer and build housing\nJoseph & Caleb: Train ML model and create tracking algorithm",
+      "The team discussed what should be presented during the demo with the professors. This will include a presentation and a throughough walkthrough of each components in the system and the processing of data, with a live demonstration.",
+  },
+  {
+    title: "Hardware and Ordering More Components",
+    date: "4-03-2025",
+    content:
+      "With all the internal hardware including the board, camera, and AI processor being finalized, we were ready to design the 3d models for the case of the camera. This was done through SOLIDWORKS and consisted of an initial rough print, which gave great insight into changes to be done for the final print. The model was redesigned with less material and a more refined design and reprinted.\n\nAs well, a 360 degree swivel mount was ordered which allow complete configuration about the direction that the camera is set up. It also allowed the system to be easily mounted onto a wall, or onto a tripod which will be done during the demo and symposium.",
+  },
+  {
+    title: "Live Object Tracking",
+    date: "19-02-2025",
+    content:
+      "Custom models were trained on some object which showed very promising results for object tracking. The live camera feed of the tracking seems to bottleneck with just he built in processor running the model. This was expected and so the AI had was added which extremely improved performance.",
+  },
+  {
+    title: "Backend & Frontend Further Developed",
+    date: "18-02-2025",
+    content:
+      "More work has been done on the backend, with data schemas being created and testing all of the request that are required to be recieved from the fronend IOS app and the hardware.\n\nThe frontend has also had some large developments, with the tracked object being displayed to the Home page and UI tests being written for all screens.",
+  },
+  {
+    title: "Adding Data",
+    date: "11-02-2025",
+    content:
+      "Jacob and Wes are working on image transfer between the backend and the frontend so that images of the tracked objects can be seen on the app. Caleb and Joseph are working on getting a test model running on the board.",
   },
   {
     title: "Continuing to Build",
@@ -77,10 +101,16 @@ export const buildProgressDataList = [
       "The team has built out each of the different components of the project, including the hardware with the ML model, the backend, and the frontend. We have created data schemas in the backend and have run tests to ensure that data transfer betweent the frontend and backend works properly. On the hardware, the OS has been flashed to the board and some camera scripts were run to test the setup and analyze processing capabilities.",
   },
   {
-    title: "Adding Data",
-    date: "11-02-2025",
+    title: "Task Delegation and Ramp-up",
+    date: "15-01-2025",
     content:
-      "Jacob and Wes are working on image transfer between the backend and the frontend so that images of the tracked objects can be seen on the app. Caleb and Joseph are working on getting a test model running on the board.",
+      "Project tasks were assigned to each memeber of the group with the plan being to work on component concurrently and connecting everything together afterwards. This approach allows easier components to be completed first so that more attention can be given so the more involved, like the ML model. The tasks assigned are the following:\n\nJacob: Keep FYDP website up to date, complete IOS application, design and print housing\nWesley: Create backend for data transfer and build housing\nJoseph & Caleb: Train ML model and create tracking algorithm",
+  },
+  {
+    title: "Parts Ordered and Recieved",
+    date: "13-01-2025",
+    content:
+      "The team ordered the microcontroller, camera, and AI hat so that we can start testing the software-hardware integration and get more precise measurements to build the housing.",
   },
 ];
 
