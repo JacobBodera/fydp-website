@@ -59,6 +59,24 @@ export const progressDataList = [
 
 export const buildProgressDataList = [
   {
+    title: "Final Report Submission",
+    date: "01-04-2025",
+    content:
+      "To wrap up the project, we finished the final report detailing all of the constraints and criteria outlined, explaining the different components of the system, and providing some next steps of where this project can go in the future. This concludes the final year design project!",
+  },
+  {
+    title: "Symposium",
+    date: "21-03-2025",
+    content:
+      "The showcase day was a great success, with a lot of participation and we had our system on full display for everyone to see.",
+  },
+  {
+    title: "Demo Day",
+    date: "13-03-2025",
+    content:
+      "With the system complete, we performed a project demo to showcase Recall to our professors. We displayed the system using a table full of objects and presented how the entire system works. Object were updated in real-time and changes were seen on the application, which was uploaded to a phone.",
+  },
+  {
     title: "Finishing up the system",
     date: "11-03-2025",
     content:
